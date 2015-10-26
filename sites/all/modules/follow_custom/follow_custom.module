@@ -1,0 +1,27 @@
+<?php
+
+function follow_custom_follow_networks_alter(&$networks, $uid = 0) {
+  $networks[$uid]['imdb'] = array(
+    'title' => t('IMDb'),
+    'domain' => 'imdb.com',
+  );
+
+  $networks[$uid]['drupal'] = array(
+    'title' => t('Drupal'),
+    'domain' => 'drupal.org',
+  );
+
+  $networks[$uid]['etsy'] = array(
+    'title' => t('Etsy'),
+    'domain' => 'etsy.com',
+  );
+
+  $networks[$uid]['redbubble'] = array(
+    'title' => t('Redbubble'),
+    'domain' => 'redbubble.com',
+  );
+
+
+drupal_add_css(drupal_get_path('module', 'follow_custom') . '/css/custom.css',
+array('group' => CSS_DEFAULT, 'every_page' => TRUE));
+}

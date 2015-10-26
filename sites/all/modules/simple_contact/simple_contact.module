@@ -14,6 +14,7 @@ function simple_contact_form_alter(&$form, &$form_state, $form_id) {
     $form['subject']['#default_value'] = t('Feedback');
   }
 
+  //Removes the checked display settings in custom contents
   if($form_id == 'node_type_form') {
     $form['display']['node_submitted']['#default_value'] = 0;
   }

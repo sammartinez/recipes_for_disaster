@@ -1,0 +1,19 @@
+a.follow-link-imdb {
+  background-image: url(/sites/all/modules/follow_custom/icons/icon-imdb.png);
+  background-size: 24px;
+}
+
+a.follow-link-drupal {
+  background-image: url(/sites/all/modules/follow_custom/icons/icon-drupal.png);
+  background-size: 24px;
+}
+
+a.follow-link-redbubble {
+  background-image: url(/sites/all/modules/follow_custom/icons/icon-redbubble.png);
+  background-size: 30px;
+}
+
+a.follow-link-etsy {
+  background-image: url(/sites/all/modules/follow_custom/icons/icon-etsy.png);
+  background-size: 25px;
+}
