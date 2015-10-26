@@ -1,0 +1,5 @@
+name = Simple Contact
+description = Removes the "send yourself a copy" from the form
+package = My Modules
+core = 7.x
+files[] = simple_contact.module
