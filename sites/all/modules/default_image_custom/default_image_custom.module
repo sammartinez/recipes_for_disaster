@@ -1,0 +1,9 @@
+<?php
+
+// function default_image_custom_form_alter(&$form, &$form_state, $form_id) {
+//   if($form_id == 'field_ui_field_edit_form') {
+//     $filename = '';
+//     $form['instance']['settings']['default_image']['#upload_location'] = ''
+//   }
+//
+// }

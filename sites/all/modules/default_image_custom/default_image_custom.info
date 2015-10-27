@@ -1,0 +1,5 @@
+name = Default Image
+description = Set the default image for custom content types
+package = My Modules
+core = 7.x
+files[] = default_image_custom.module
