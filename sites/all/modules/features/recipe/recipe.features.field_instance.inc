@@ -60,10 +60,8 @@ function recipe_field_default_field_instances() {
     'bundle' => 'recipe',
     'default_value' => array(
       0 => array(
-        'value' => '<ul>
-<li> Ingredient 1 </li>
-<li> Ingredient 2 </li>
-</ul>',
+        'value' => 'Ingredient 1
+Ingredient 2',
         'format' => 'filtered_html',
       ),
     ),
@@ -72,9 +70,21 @@ function recipe_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
+        'module' => 'textformatter',
+        'settings' => array(
+          'textformatter_class' => 'textformatter-list',
+          'textformatter_comma_and' => 0,
+          'textformatter_comma_full_stop' => 0,
+          'textformatter_comma_override' => 0,
+          'textformatter_comma_tag' => 'div',
+          'textformatter_contrib' => array(),
+          'textformatter_separator_custom' => '',
+          'textformatter_separator_custom_class' => 'textformatter-separator',
+          'textformatter_separator_custom_tag' => 'span',
+          'textformatter_term_plain' => 0,
+          'textformatter_type' => 'ul',
+        ),
+        'type' => 'textformatter_list',
         'weight' => 3,
       ),
       'teaser' => array(
@@ -108,10 +118,8 @@ function recipe_field_default_field_instances() {
     'bundle' => 'recipe',
     'default_value' => array(
       0 => array(
-        'value' => '<ol>
-<li> Step 1 </li>
-<li> Step 2 </li>
-</ol>',
+        'value' => 'Step 1
+Step 2',
         'format' => 'filtered_html',
       ),
     ),
@@ -120,9 +128,21 @@ function recipe_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
+        'module' => 'textformatter',
+        'settings' => array(
+          'textformatter_class' => 'textformatter-list',
+          'textformatter_comma_and' => 0,
+          'textformatter_comma_full_stop' => 0,
+          'textformatter_comma_override' => 0,
+          'textformatter_comma_tag' => 'div',
+          'textformatter_contrib' => array(),
+          'textformatter_separator_custom' => '',
+          'textformatter_separator_custom_class' => 'textformatter-separator',
+          'textformatter_separator_custom_tag' => 'span',
+          'textformatter_term_plain' => 0,
+          'textformatter_type' => 'ol',
+        ),
+        'type' => 'textformatter_list',
         'weight' => 4,
       ),
       'teaser' => array(
