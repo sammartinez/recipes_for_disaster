@@ -1,0 +1,15 @@
+<?php
+
+function simplified_forms_form_alter(&$form, &$form_state, $form_id) {
+
+  $forms_to_alter = array('article_node_form', 'awards_node_form', 'news_node_form', 'recipe_node_form', 'tips_and_tricks_node_form');
+
+    foreach($forms_to_alter as $current_form) {
+      if($form_id == $current_form) {
+        $form['menu']['#access'] = 0;
+        $form['revision_information']['#access'] = 0;
+        $form['comment_settings']['comment']['#default_value'] = 1;
+        $form['author']['#access'] = 0;
+      }
+    }
+}

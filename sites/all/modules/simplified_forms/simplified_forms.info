@@ -1,0 +1,5 @@
+name = Simplified Forms
+description = Simplifies the forms for custom content types
+package = My Modules
+core = 7.x
+files[] = simplified_forms.module
