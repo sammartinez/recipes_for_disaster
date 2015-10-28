@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Dog Images  feature.
+ */
+
+include_once 'dog_images_.features.inc';
